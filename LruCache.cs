@@ -7,8 +7,6 @@ namespace LruCache
         private readonly int m_capacity;
         private readonly LinkedList<CacheItem> m_nodes;
 
-        //Zaman kısıtı verilmişse bellekten feda edeceksin.
-        //Böyle bir durumda yine linked list içerisinde tut ancak adresine hashset gibi hızlı bir koleksiyonla eriş.
         public LruCache(int capacity)
         {
             m_capacity = capacity;
